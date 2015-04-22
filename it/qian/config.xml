@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<settings>	
+
+		<auto_play>
+			<defaults symbol="circular" /><!--倒计时按钮的位置-->
+			<tweenIn x="414" y="25" width="30" height="30" tint="0xFFFFFF" alpha="0.5"/>
+			<tweenOver alpha="1"/>
+		</auto_play>
+	
+		<prev_button><!--左右翻页按钮的位置-->				
+			<tweenIn x="20" y="100" width="30" height="100" alpha="0" />
+			<tweenOver alpha="0" />
+		</prev_button>
+		<prev_symbol>
+			<defaults type="3" />
+			<tweenIn x="20" y="100" alpha="0.5"  />
+			<tweenOver time="0.15" x="15" scaleX="1.1" scaleY="1.1" />
+		</prev_symbol>
+		
+		<next_button>			
+			<tweenIn x="420" y="100" width="30" height="100" alpha="0" />
+			<tweenOver alpha="0" />
+		</next_button>
+		<next_symbol>
+			<defaults type="3" />
+			<tweenIn x="420" y="100" alpha="0.5"/>
+			<tweenOver time="0.15" x="425" scaleX="1.1" scaleY="1.1" />
+		</next_symbol>	
+		
+			
+			
+
+		<description>
+			<defaults 
+				round_corners="10, 10, 10, 10"					
+				heading_text_size="22"
+				heading_text_color="0xfc9900"	
+				paragraph_text_size="13"
+				paragraph_text_color="0xFFFFFF"					
+			/>
+			<tweenIn x="330" y="120" width="140" height="22" alpha="0.15" />
+			<tweenOver alpha="0.3"/>
+		</description>	
+	
+		<transitions
+			slicing="vertical" 
+			direction="down"
+			duration="0.6" 
+			delay="0.2"
+			cube_color="0x611811"
+		/>
+	
+	</settings>
+
+
+	<slides>
+	
+		<slide>
+			<url>images/slide_1.jpg</url>
+			<link target="_blank"></link>	
+		</slide>
+		
+		<transition direction="left"/>		
+		
+		<slide>
+			<url>images/slide_2.jpg</url>
+			<link target="_blank"></link>	
+		</slide>
+		
+		<transition duration="0.6" delay=".2" direction="down"/>		
+		
+		<slide>
+			<url>images/slide_3.jpg</url>
+			<link target="_blank"></link>	
+		</slide>	
+		
+		<transition num="3" slicing="horizontal" direction="left" delay="0.05"/>			
+		
+		<slide>
+			<url>images/slide_4.jpg</url>
+			<link target="_blank"></link>	
+		</slide>
+			
+	<transition  num="6" slicing="horizontal"  direction="right" duration="0.8"  delay="0.05" z_multiplier="5"/>	
+		
+		<slide>
+			<url>images/slide_5.jpg</url>
+			<link target="_blank"></link>	
+		</slide>	
+					
+			<transition num="4" direction="down" slicing="horizontal" z_multiplier="6" delay="0.1"/>	
+		
+		<slide>
+			<url>images/slide_6.jpg</url>
+			<link target="_blank"></link>	
+		</slide>				
+		
+		<transition num="6" slicing="vertical" direction="down" shader="phong" delay="0.05"/>			
+		
+		<slide>
+			<url>images/slide_7.jpg</url>
+			<link target="_blank"></link>	
+		</slide>				
+		
+		<transition num="3" direction="up"/>	
+			
+	</slides>
+</data>
+
